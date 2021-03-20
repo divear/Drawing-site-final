@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <input autocomplete="off" onmouseover="Changer()" min="1" max="100" value="1" class="range" id="range" type="range">
+    <input autocomplete="off" id="color" type="color" class="color">
+    <img onclick="PickMode()" class="colpick" src="pics/coords.png">
+    <img onclick="Addsquare()" class="square" src="pics/square.png">
+    <img onclick="AddCircles()" class="circle" src="pics/circle.png">
+    <img onclick="AddTriangle()" class="triangle" src="pics/triangle.png">
+
+    <button id="clbutton" onclick="Closepath()" class="clbutton"> Close path</button>
+
+    <canvas onclick="Changer()" id="canvas" ></canvas>
+
+    <h2 id="cords" class="cords"></h2>
+
+
+</body>
+</html>
